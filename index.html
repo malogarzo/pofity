@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Pofity</title>
+            
+        <link rel="apple-touch-icon" sizes="57x57" href="images/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="images/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="images/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="images/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="images/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="images/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="images/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="images/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="images/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="images/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="images/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+        <link rel="manifest" href="images/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="images/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+    
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/custom.css">
+        <script src="js/jquery-3.1.1.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="js/script.js"></script>
+        <script src="js/moment.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="page-header">
+                        <h1>Pofity</h1>
+                        <p class="lead">Basic Ajax Spotify API test</p>
+                    </div>
+                </div>
+
+                <div class="col-xs-12">
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a href="#" id="linkBuscador">Finder</a></li>
+                        <li><a href="#" id="linkFavoritos">Favorites</a></li>
+                    </ul>
+                </div>
+            </div>  
+            
+            <div class="row">
+                <div class="col-xs-12">
+                    <div id="finderTab">
+                        <div class="form-group row">
+                            <span class="col-sm-8">
+                                <input type="text" id="artistFinder" class="form-control pull-right" placeholder="Search artist...">
+                            </span>
+                            <span class="col-sm-4">
+                                <button id="buscarArtistas" type="button" class="btn btn-primary">Search</button>
+                            </span>
+                        </div>
+
+                        <ul id="artistResult" class="list-group"></ul>
+                    </div>
+
+                    <div id="favoritesTab" class="hidden">
+                        <ul id="favoritesResult" class="list-group"></ul>
+                    </div>
+                </div>
+
+                <div id="dialogAlbumDetail" role="dialog" class="modal fade">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header"></div>
+                               
+                            <div class="modal-body"></div>
+
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
